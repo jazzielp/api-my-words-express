@@ -1,6 +1,8 @@
 const express = require('express')
+
+const config = require('./config/config.js')
 const app = express()
-const port = 3000
+const port = config.apiPort
 
 app.get('/', (req, res) => {
   res.json({
@@ -9,5 +11,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log()
+  console.log('Server running on port ' + port)
 })
