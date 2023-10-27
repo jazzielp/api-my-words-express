@@ -6,10 +6,15 @@ const port = config.apiPort
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello, word'
+    message: 'Welcome to my API!'
   })
 })
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log('Server running on port ' + port)
 })
+
+module.exports = {
+  app,
+  server
+}

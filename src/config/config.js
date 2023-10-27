@@ -4,9 +4,13 @@ if (process.env.NODE_ENV === 'production') {
   dotenv.config({
     path: '.production.env'
   })
-} else {
+} else if (process.env.NODE_ENV === 'development') {
   dotenv.config({
     path: '.development.env'
+  })
+} else {
+  dotenv.config({
+    path: '.test.env'
   })
 }
 
