@@ -1,0 +1,40 @@
+{
+  "name": "api-my-words-express",
+  "version": "1.0.0",
+  "description": "This is a REST-API of an application to learn words of a new language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazzielp/api-my-words-express.git"
+  },
+  "keywords": [],
+  "author": "Jazziel Puente <Jazziel.puente.v@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jazzielp/api-my-words-express/issues"
+  },
+  "homepage": "https://github.com/jazzielp/api-my-words-express#readme",
+  "devDependencies": {
+    "jest": "29.7.0",
+    "nodemon": "3.0.1",
+    "sequelize-cli": "6.6.1",
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "@hapi/boom": "10.0.1",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "express": "4.18.2",
+    "joi": "17.11.0",
+    "morgan": "1.10.0",
+    "mysql2": "3.6.2",
+    "notenv": "2.0.3",
+    "sequelize": "6.33.0"
+  }
+}
